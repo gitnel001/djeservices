@@ -16,7 +16,7 @@ export default function Logo({ size = 'md', loading = 'lazy', className = '' }: 
 
   return (
     <img
-      src="DJE_logo-removebg-preview (1).png"
+      src="/logo.png"
       alt="DJE Services"
       className={`${sizes[size]} object-contain ${className}`}
       loading={loading}
