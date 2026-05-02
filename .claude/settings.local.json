@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(Get-ChildItem -Path \"o:\\\\djam\\\\djesrvices-site\" -Force)",
+      "Bash(Select-Object Name, PSIsContainer)",
+      "Bash(Format-Table)",
+      "Bash(npm install *)",
+      "Bash(xargs sed *)"
+    ]
+  }
+}

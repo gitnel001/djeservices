@@ -1,0 +1,225 @@
+/* Hero Section */
+#home {
+  position: relative;
+  background: linear-gradient(135deg, #1B2D5C 0%, #0f1e3d 100%);
+  margin-top: 0;
+}
+
+#home canvas {
+  display: block;
+}
+
+#home h1 {
+  animation: fadeInDown 1s ease-out;
+  font-size: clamp(2.5rem, 10vw, 4rem);
+}
+
+#home p {
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+#home .flex {
+  animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2s ease-in-out infinite;
+}
+
+/* Service Cards Animation */
+.service-card {
+  position: relative;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  background: linear-gradient(135deg, #F97316, #a8860d);
+  transition: height 0.3s ease;
+}
+
+.service-card:hover::before {
+  height: 3px;
+}
+
+/* Text gradient effect */
+.text-gradient {
+  background: linear-gradient(135deg, #1B2D5C, #F97316);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Button fill animation */
+.btn-fill-animation {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-fill-animation::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.btn-fill-animation:hover::before {
+  left: 100%;
+}
+
+/* Parallax effect for about section */
+.parallax-left {
+  position: relative;
+  z-index: 1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .parallax-left {
+    animation: parallaxFloat 8s ease-in-out infinite;
+  }
+}
+
+@keyframes parallaxFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Timeline animation */
+.timeline-item {
+  position: relative;
+  opacity: 0;
+  animation: slideInFromBottom 0.8s ease-out forwards;
+}
+
+.timeline-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.timeline-item:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.timeline-item:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Carousel transition */
+.carousel-transition {
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+/* Gold accent effects */
+.gold-border-bottom {
+  position: relative;
+  display: inline-block;
+}
+
+.gold-border-bottom::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #F97316;
+  transition: width 0.3s ease;
+}
+
+.gold-border-bottom:hover::after {
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #home h1 {
+    font-size: 2rem;
+  }
+
+  #home p {
+    font-size: 1rem;
+  }
+
+  .grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Focus styles */
+button:focus,
+a:focus {
+  outline: 2px solid #F97316;
+  outline-offset: 2px;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
