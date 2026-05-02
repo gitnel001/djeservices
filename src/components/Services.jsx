@@ -5,37 +5,37 @@ const services = [
     icon: 'SparklesIcon',
     title: 'Nettoyage classique',
     desc: 'Entretien régulier des locaux et habitations',
-    image: '/image-1.jpeg'
+    image: '/images/image-1.jpeg'
   },
   {
     icon: 'CheckCircleIcon',
     title: 'Nettoyage professionnel',
     desc: 'Techniques spécialisées, résultats irréprochables',
-    image: '/image-2.jpeg'
+    image: '/images/image-2.jpeg'
   },
   {
     icon: 'BuildingOfficeIcon',
     title: 'Nettoyage industriel',
     desc: 'Usines, ateliers, zones de production',
-    image: '/image-3.jpeg'
+    image: '/images/image-3.jpeg'
   },
   {
     icon: 'ShieldCheckIcon',
     title: 'Lutte antiparasitaire',
     desc: 'Traitement préventif et curatif contre les nuisibles',
-    image: '/image-4.jpeg'
+    image: '/images/image-4.jpeg'
   },
   {
     icon: 'ExclamationTriangleIcon',
     title: 'Contrôle des rongeurs',
     desc: 'Élimination ciblée des rongeurs',
-    image: '/image-5.jpeg'
+    image: '/images/image-5.jpeg'
   },
   {
     icon: 'LeafIcon',
     title: 'Espaces verts',
     desc: 'Tonte, taille, désherbage, aménagement paysager',
-    image: '/image-6.jpeg'
+    image: '/images/image-6.jpeg'
   }
 ]
 

@@ -14,20 +14,20 @@ export default function BeforeAfter() {
     {
       title: 'Bureau Professionnel',
       desc: 'Nettoyage complet d\'un bureau avec lustrage des surfaces',
-      before: '/image-7.jpeg',
-      after: '/image-8.jpeg'
+      before: '/images/image-7.jpeg',
+      after: '/images/image-8.jpeg'
     },
     {
       title: 'Espace Résidentiel',
       desc: 'Nettoyage en profondeur d\'un appartement',
-      before: '/image-9.jpeg',
-      after: '/image-10.jpeg'
+      before: '/images/image-9.jpeg',
+      after: '/images/image-10.jpeg'
     },
     {
       title: 'Zone Commerciale',
       desc: 'Nettoyage industriel et entretien régulier',
-      before: '/image-11.jpeg',
-      after: '/image-12.jpeg'
+      before: '/images/image-11.jpeg',
+      after: '/images/image-12.jpeg'
     }
   ]
 

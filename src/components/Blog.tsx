@@ -15,7 +15,7 @@ export default function Blog() {
       excerpt: 'Un environnement de travail propre booste la productivité. Découvrez nos meilleurs conseils pour garder vos bureaux impeccables.',
       date: '15 Décembre 2024',
       category: 'Conseils',
-      image: '/image-14.jpeg'
+      image: '/images/image-14.jpeg'
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ export default function Blog() {
       excerpt: 'Les acariens peuvent causer des problèmes respiratoires. Apprenez comment les éliminer de façon écologique et naturelle.',
       date: '10 Décembre 2024',
       category: 'Santé',
-      image: '/image-15.jpeg'
+      image: '/images/image-15.jpeg'
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ export default function Blog() {
       excerpt: 'Un environnement propre est la clé d\'une famille saine. Découvrez pourquoi le nettoyage régulier est indispensable.',
       date: '5 Décembre 2024',
       category: 'Santé',
-      image: '/image-16.jpeg'
+      image: '/images/image-16.jpeg'
     }
   ]
 

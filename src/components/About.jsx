@@ -6,7 +6,7 @@ export default function About() {
           {/* Left side - Image */}
           <div className="rounded-2xl h-96 relative overflow-hidden shadow-lg">
             <img
-              src="/image-13.jpeg"
+              src="/images/image-13.jpeg"
               alt="Équipe DJE Services"
               className="w-full h-full object-cover"
               loading="lazy"
